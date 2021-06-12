@@ -18,7 +18,8 @@ struct ContentView: View {
     var questions = [
         Question(title: "What day of the week is it?", option1: "Monday", option2: "Saturday", option3: "Sunday", option4: "Wednesday"),
         Question(title: "What does YJ eat?", option1: "Broccoli", option2: "Nutella", option3: "Rice", option4: "MacBooks"),
-        Question(title: "Did Jia Chen sleep last night?", option1: "Yes", option2: "No", option3: "Yes but I needed another answer", option4: "Yes?")
+        Question(title: "Did Jia Chen sleep last night?", option1: "Yes", option2: "No", option3: "Yes but I needed another answer", option4: "Yes?"),
+        Question(title: "What is our Q&A platform?", option1: "text-questions", option2: "ed", option3: "Yes but I needed another answer", option4: "scream into the void")
     ]
     
     var body: some View {

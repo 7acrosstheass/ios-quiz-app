@@ -31,11 +31,15 @@ struct ContentView: View {
             HStack {
                 VStack{
                     Button(questions[currentQuestion].option1) { didTapOption(1) }
+                        .padding()
                     Button(questions[currentQuestion].option2) { didTapOption(2) }
+                        .padding()
                 }
                 VStack {
                     Button(questions[currentQuestion].option3) { didTapOption(3) }
+                        .padding()
                     Button(questions[currentQuestion].option4) { didTapOption(4) }
+                        .padding()
                 }
             }
         }

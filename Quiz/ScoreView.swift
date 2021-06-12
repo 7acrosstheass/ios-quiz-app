@@ -14,10 +14,13 @@ struct ScoreView: View {
     
     var body: some View {
         ZStack {
-            Color.yellow
+            Color.red
+                .opacity(/*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
             VStack {
                 Text("Your score was:")
                 Text("\(score)/\(totalScore)")
+                    .fontWeight(.bold)
+                    .padding(.all)
             }
         }
     }

@@ -32,14 +32,34 @@ struct ContentView: View {
                 VStack{
                     Button(questions[currentQuestion].option1) { didTapOption(1) }
                         .padding()
+                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.black)
+                        .background(Color.red)
+                        .cornerRadius(10)
                     Button(questions[currentQuestion].option2) { didTapOption(2) }
                         .padding()
+                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.black)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+
                 }
                 VStack {
                     Button(questions[currentQuestion].option3) { didTapOption(3) }
                         .padding()
+                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.black)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+
                     Button(questions[currentQuestion].option4) { didTapOption(4) }
                         .padding()
+                        .padding()
+                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.black)
+                        .background(Color.green)
+                        .cornerRadius(10)
+
                 }
             }
         }

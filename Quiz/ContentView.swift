@@ -24,21 +24,27 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            
             Text(questions[currentQuestion].title)
+                .font(.title)
                 .padding()
+                .frame(width: 360, height: 150, alignment: .center)
+                .background(Color.gray)
+                .opacity(0.7)
+                .cornerRadius(5)
+            Spacer()
+                .frame(height:400)
             
             HStack {
                 VStack{
                     Button(questions[currentQuestion].option1) { didTapOption(1) }
                         .padding()
-                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 180, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.black)
                         .background(Color.red)
                         .cornerRadius(10)
                     Button(questions[currentQuestion].option2) { didTapOption(2) }
                         .padding()
-                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 180, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.black)
                         .background(Color.yellow)
                         .cornerRadius(10)
@@ -47,7 +53,7 @@ struct ContentView: View {
                 VStack {
                     Button(questions[currentQuestion].option3) { didTapOption(3) }
                         .padding()
-                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 180, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.black)
                         .background(Color.blue)
                         .cornerRadius(10)
@@ -55,7 +61,7 @@ struct ContentView: View {
                     Button(questions[currentQuestion].option4) { didTapOption(4) }
                         .padding()
                         .padding()
-                        .frame(width: 150, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 180, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.black)
                         .background(Color.green)
                         .cornerRadius(10)
